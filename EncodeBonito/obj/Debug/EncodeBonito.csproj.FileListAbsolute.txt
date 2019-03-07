@@ -1,0 +1,10 @@
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\bin\Debug\EncodeBonito.exe.config
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\bin\Debug\EncodeBonito.exe
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\bin\Debug\EncodeBonito.pdb
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.csprojAssemblyReference.cache
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.frmMain.resources
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.Properties.Resources.resources
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.csproj.GenerateResource.cache
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.csproj.CoreCompileInputs.cache
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.exe
+C:\Users\CarlosRdeV\source\repos\EncodeBonito\EncodeBonito\obj\Debug\EncodeBonito.pdb

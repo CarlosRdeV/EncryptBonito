@@ -13,10 +13,16 @@ namespace EncodeBonito
     public partial class frmMain : Form
     {
         string txtPassword = "abc";
+        
+       
 
         public frmMain()
         {
             InitializeComponent();
+            btnEncrypt.Enabled = false;
+            btnDecrypt.Enabled = false;
+            btnPassword.Enabled = false;
+            btnLogout.Enabled = false;
         }
 
         private void btnDecrypt_Click(object sender, EventArgs e)
@@ -52,24 +58,17 @@ namespace EncodeBonito
 
         private void picClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
         }
 
         private void picMin_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+           
         }
 
         private void picMax_Click(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
+           
         }
 
         private void btnCopyAll_Click(object sender, EventArgs e)
@@ -92,6 +91,53 @@ namespace EncodeBonito
         {
             txtDecryptOutput.Text = Cifrador.Decrypt(txtDecryptInput.Text, txtPassword);
 
+        }
+
+        private void picMin_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void picMax_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void picClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(txtUser.Text=="1" && txtPass.Text == "1")
+            {
+                btnEncrypt.Enabled = true;
+                btnDecrypt.Enabled = true;
+                btnPassword.Enabled = true;
+                btnLogout.Enabled = true;
+                btnLogin.Enabled = false;
+                pnlLogin.Visible = false;
+                pnlEncrypt.Visible = true;
+
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            btnEncrypt.Enabled = false;
+            btnDecrypt.Enabled = false;
+            btnPassword.Enabled = false;
+            btnLogout.Enabled = false;
+            btnLogin.Enabled = true;
+            pnlLogin.Visible = true;
         }
     }
 }

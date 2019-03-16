@@ -63,6 +63,16 @@ namespace EncodeBonito.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap encrypted_logo_template_preview_2_o {
+            get {
+                object obj = ResourceManager.GetObject("encrypted-logo-template-preview-2-o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_encrypt {
             get {
                 object obj = ResourceManager.GetObject("icon_encrypt", resourceCulture);

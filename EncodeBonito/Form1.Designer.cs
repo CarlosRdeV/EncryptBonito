@@ -30,57 +30,72 @@
         {
             this.pnlLeftSide = new System.Windows.Forms.Panel();
             this.pnlOnButtonPosition = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
-            this.picMax = new System.Windows.Forms.PictureBox();
-            this.picMin = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnPassword = new System.Windows.Forms.Button();
-            this.btnDecrypt = new System.Windows.Forms.Button();
-            this.btnEncrypt = new System.Windows.Forms.Button();
             this.pnlTopSide = new System.Windows.Forms.Panel();
+            this.pnlDerecho = new System.Windows.Forms.Panel();
             this.pnlEncrypt = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEncryptAction = new System.Windows.Forms.Button();
-            this.btnCopyAll = new System.Windows.Forms.Button();
             this.txtEncryptOutput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEncryptInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlDecrypt1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.txtDecryptOutput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDecryptInput = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnEncryptAction = new System.Windows.Forms.Button();
+            this.btnCopyAll = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.picClose = new System.Windows.Forms.PictureBox();
+            this.picMax = new System.Windows.Forms.PictureBox();
+            this.picMin = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnPassword = new System.Windows.Forms.Button();
+            this.btnDecrypt = new System.Windows.Forms.Button();
+            this.btnEncrypt = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.pnlLeftSide.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMax)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
+            this.pnlTopSide.SuspendLayout();
+            this.pnlDerecho.SuspendLayout();
             this.pnlEncrypt.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlDecrypt1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlPassword.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pnlLogin.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftSide
             // 
             this.pnlLeftSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.pnlLeftSide.Controls.Add(this.pnlOnButtonPosition);
-            this.pnlLeftSide.Controls.Add(this.picClose);
-            this.pnlLeftSide.Controls.Add(this.picMax);
-            this.pnlLeftSide.Controls.Add(this.picMin);
+            this.pnlLeftSide.Controls.Add(this.btnLogout);
+            this.pnlLeftSide.Controls.Add(this.btnLogin);
             this.pnlLeftSide.Controls.Add(this.label7);
             this.pnlLeftSide.Controls.Add(this.btnPassword);
             this.pnlLeftSide.Controls.Add(this.btnDecrypt);
@@ -99,103 +114,39 @@
             this.pnlOnButtonPosition.Size = new System.Drawing.Size(9, 39);
             this.pnlOnButtonPosition.TabIndex = 2;
             // 
-            // picClose
-            // 
-            this.picClose.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_delete_24;
-            this.picClose.Location = new System.Drawing.Point(12, 7);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(24, 24);
-            this.picClose.TabIndex = 8;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
-            // 
-            // picMax
-            // 
-            this.picMax.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_maximize_window_24;
-            this.picMax.Location = new System.Drawing.Point(72, 7);
-            this.picMax.Name = "picMax";
-            this.picMax.Size = new System.Drawing.Size(24, 24);
-            this.picMax.TabIndex = 7;
-            this.picMax.TabStop = false;
-            this.picMax.Click += new System.EventHandler(this.picMax_Click);
-            // 
-            // picMin
-            // 
-            this.picMin.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_minimize_window_24;
-            this.picMin.Location = new System.Drawing.Point(42, 7);
-            this.picMin.Name = "picMin";
-            this.picMin.Size = new System.Drawing.Size(24, 24);
-            this.picMin.TabIndex = 6;
-            this.picMin.TabStop = false;
-            this.picMin.Click += new System.EventHandler(this.picMin_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Ebrima", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label7.Location = new System.Drawing.Point(30, 36);
+            this.label7.Location = new System.Drawing.Point(10, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 30);
+            this.label7.Size = new System.Drawing.Size(177, 40);
             this.label7.TabIndex = 5;
             this.label7.Text = "EncryptApp";
-            // 
-            // btnPassword
-            // 
-            this.btnPassword.FlatAppearance.BorderSize = 0;
-            this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassword.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnPassword.Image = global::EncodeBonito.Properties.Resources.icons8_key_32;
-            this.btnPassword.Location = new System.Drawing.Point(0, 162);
-            this.btnPassword.Name = "btnPassword";
-            this.btnPassword.Size = new System.Drawing.Size(200, 39);
-            this.btnPassword.TabIndex = 3;
-            this.btnPassword.Text = "Password";
-            this.btnPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPassword.UseVisualStyleBackColor = true;
-            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
-            // 
-            // btnDecrypt
-            // 
-            this.btnDecrypt.FlatAppearance.BorderSize = 0;
-            this.btnDecrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDecrypt.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDecrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnDecrypt.Image = global::EncodeBonito.Properties.Resources.icons8_padlock_32;
-            this.btnDecrypt.Location = new System.Drawing.Point(0, 117);
-            this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(200, 39);
-            this.btnDecrypt.TabIndex = 3;
-            this.btnDecrypt.Text = "Decrypt";
-            this.btnDecrypt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDecrypt.UseVisualStyleBackColor = true;
-            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
-            // 
-            // btnEncrypt
-            // 
-            this.btnEncrypt.FlatAppearance.BorderSize = 0;
-            this.btnEncrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEncrypt.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEncrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnEncrypt.Image = global::EncodeBonito.Properties.Resources.icons8_privacy_32;
-            this.btnEncrypt.Location = new System.Drawing.Point(0, 72);
-            this.btnEncrypt.Name = "btnEncrypt";
-            this.btnEncrypt.Size = new System.Drawing.Size(200, 39);
-            this.btnEncrypt.TabIndex = 0;
-            this.btnEncrypt.Text = "Encrypt";
-            this.btnEncrypt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEncrypt.UseVisualStyleBackColor = true;
-            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
             // pnlTopSide
             // 
             this.pnlTopSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(181)))));
+            this.pnlTopSide.Controls.Add(this.pnlDerecho);
             this.pnlTopSide.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopSide.Location = new System.Drawing.Point(200, 0);
             this.pnlTopSide.Name = "pnlTopSide";
             this.pnlTopSide.Size = new System.Drawing.Size(667, 34);
             this.pnlTopSide.TabIndex = 1;
+            // 
+            // pnlDerecho
+            // 
+            this.pnlDerecho.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlDerecho.Controls.Add(this.picClose);
+            this.pnlDerecho.Controls.Add(this.picMax);
+            this.pnlDerecho.Controls.Add(this.picMin);
+            this.pnlDerecho.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlDerecho.Location = new System.Drawing.Point(546, 0);
+            this.pnlDerecho.Name = "pnlDerecho";
+            this.pnlDerecho.Size = new System.Drawing.Size(121, 34);
+            this.pnlDerecho.TabIndex = 8;
             // 
             // pnlEncrypt
             // 
@@ -218,32 +169,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(512, 160);
             this.panel1.TabIndex = 0;
-            // 
-            // btnEncryptAction
-            // 
-            this.btnEncryptAction.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_password_321;
-            this.btnEncryptAction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEncryptAction.FlatAppearance.BorderSize = 0;
-            this.btnEncryptAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEncryptAction.Location = new System.Drawing.Point(122, 113);
-            this.btnEncryptAction.Name = "btnEncryptAction";
-            this.btnEncryptAction.Size = new System.Drawing.Size(35, 35);
-            this.btnEncryptAction.TabIndex = 5;
-            this.btnEncryptAction.UseVisualStyleBackColor = true;
-            this.btnEncryptAction.Click += new System.EventHandler(this.btnEncryptAction_Click);
-            // 
-            // btnCopyAll
-            // 
-            this.btnCopyAll.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_copy_32;
-            this.btnCopyAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCopyAll.FlatAppearance.BorderSize = 0;
-            this.btnCopyAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCopyAll.Location = new System.Drawing.Point(445, 74);
-            this.btnCopyAll.Name = "btnCopyAll";
-            this.btnCopyAll.Size = new System.Drawing.Size(25, 25);
-            this.btnCopyAll.TabIndex = 4;
-            this.btnCopyAll.UseVisualStyleBackColor = true;
-            this.btnCopyAll.Click += new System.EventHandler(this.btnCopyAll_Click);
             // 
             // txtEncryptOutput
             // 
@@ -303,32 +228,6 @@
             this.panel3.Size = new System.Drawing.Size(512, 160);
             this.panel3.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_padlock_322;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(122, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 35);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_copy_32;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(445, 74);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(25, 25);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // txtDecryptOutput
             // 
             this.txtDecryptOutput.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -387,18 +286,15 @@
             this.panel4.Size = new System.Drawing.Size(512, 330);
             this.panel4.TabIndex = 0;
             // 
-            // button3
+            // label8
             // 
-            this.button3.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_save_32;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(95, 166);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 35);
-            this.button3.TabIndex = 5;
-            this.button3.UseVisualStyleBackColor = true;
+            this.label8.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(10, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(499, 50);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Seleccione el Password con el que serán cifrados sus mensajes, posteriormente ing" +
+    "rese la contraseña del administrador para validar el cambio.";
             // 
             // textBox3
             // 
@@ -436,23 +332,273 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Inserta Password: ";
             // 
-            // label8
+            // pnlLogin
             // 
-            this.label8.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(499, 50);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Seleccione el Password con el que serán cifrados sus mensajes, posteriormente ing" +
-    "rese la contraseña del administrador para validar el cambio.";
+            this.pnlLogin.Controls.Add(this.panel2);
+            this.pnlLogin.Location = new System.Drawing.Point(203, 36);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(667, 423);
+            this.pnlLogin.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(244)))), ((int)(((byte)(246)))));
+            this.panel2.Controls.Add(this.btnInicio);
+            this.panel2.Controls.Add(this.txtPass);
+            this.panel2.Controls.Add(this.txtUser);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(146, 36);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(327, 343);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::EncodeBonito.Properties.Resources.encrypted_logo_template_preview_2_o;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(101, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 140);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnEncryptAction
+            // 
+            this.btnEncryptAction.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_password_321;
+            this.btnEncryptAction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEncryptAction.FlatAppearance.BorderSize = 0;
+            this.btnEncryptAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEncryptAction.Location = new System.Drawing.Point(122, 113);
+            this.btnEncryptAction.Name = "btnEncryptAction";
+            this.btnEncryptAction.Size = new System.Drawing.Size(35, 35);
+            this.btnEncryptAction.TabIndex = 5;
+            this.btnEncryptAction.UseVisualStyleBackColor = true;
+            this.btnEncryptAction.Click += new System.EventHandler(this.btnEncryptAction_Click);
+            // 
+            // btnCopyAll
+            // 
+            this.btnCopyAll.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_copy_32;
+            this.btnCopyAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCopyAll.FlatAppearance.BorderSize = 0;
+            this.btnCopyAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCopyAll.Location = new System.Drawing.Point(445, 74);
+            this.btnCopyAll.Name = "btnCopyAll";
+            this.btnCopyAll.Size = new System.Drawing.Size(25, 25);
+            this.btnCopyAll.TabIndex = 4;
+            this.btnCopyAll.UseVisualStyleBackColor = true;
+            this.btnCopyAll.Click += new System.EventHandler(this.btnCopyAll_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_padlock_322;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(122, 113);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(35, 35);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_copy_32;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(445, 74);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(25, 25);
+            this.button2.TabIndex = 4;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_save_32;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(95, 166);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 35);
+            this.button3.TabIndex = 5;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // picClose
+            // 
+            this.picClose.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_delete_24;
+            this.picClose.Location = new System.Drawing.Point(78, 6);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(24, 24);
+            this.picClose.TabIndex = 11;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click_1);
+            // 
+            // picMax
+            // 
+            this.picMax.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_maximize_window_24;
+            this.picMax.Location = new System.Drawing.Point(48, 6);
+            this.picMax.Name = "picMax";
+            this.picMax.Size = new System.Drawing.Size(24, 24);
+            this.picMax.TabIndex = 10;
+            this.picMax.TabStop = false;
+            this.picMax.Click += new System.EventHandler(this.picMax_Click_1);
+            // 
+            // picMin
+            // 
+            this.picMin.BackgroundImage = global::EncodeBonito.Properties.Resources.icons8_minimize_window_24;
+            this.picMin.Location = new System.Drawing.Point(18, 6);
+            this.picMin.Name = "picMin";
+            this.picMin.Size = new System.Drawing.Size(24, 24);
+            this.picMin.TabIndex = 9;
+            this.picMin.TabStop = false;
+            this.picMin.Click += new System.EventHandler(this.picMin_Click_1);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogout.Image = global::EncodeBonito.Properties.Resources.icons8_key_32;
+            this.btnLogout.Location = new System.Drawing.Point(0, 417);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(200, 39);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Cerrar Sesión";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogin.Image = global::EncodeBonito.Properties.Resources.icons8_key_32;
+            this.btnLogin.Location = new System.Drawing.Point(0, 72);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(200, 39);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Ingresar";
+            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // btnPassword
+            // 
+            this.btnPassword.FlatAppearance.BorderSize = 0;
+            this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassword.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnPassword.Image = global::EncodeBonito.Properties.Resources.icons8_key_32;
+            this.btnPassword.Location = new System.Drawing.Point(0, 189);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.Size = new System.Drawing.Size(200, 39);
+            this.btnPassword.TabIndex = 3;
+            this.btnPassword.Text = "Password";
+            this.btnPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPassword.UseVisualStyleBackColor = true;
+            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
+            // 
+            // btnDecrypt
+            // 
+            this.btnDecrypt.FlatAppearance.BorderSize = 0;
+            this.btnDecrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecrypt.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnDecrypt.Image = global::EncodeBonito.Properties.Resources.icons8_padlock_32;
+            this.btnDecrypt.Location = new System.Drawing.Point(0, 150);
+            this.btnDecrypt.Name = "btnDecrypt";
+            this.btnDecrypt.Size = new System.Drawing.Size(200, 39);
+            this.btnDecrypt.TabIndex = 3;
+            this.btnDecrypt.Text = "Decrypt";
+            this.btnDecrypt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDecrypt.UseVisualStyleBackColor = true;
+            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
+            // 
+            // btnEncrypt
+            // 
+            this.btnEncrypt.FlatAppearance.BorderSize = 0;
+            this.btnEncrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEncrypt.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEncrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnEncrypt.Image = global::EncodeBonito.Properties.Resources.icons8_privacy_32;
+            this.btnEncrypt.Location = new System.Drawing.Point(0, 110);
+            this.btnEncrypt.Name = "btnEncrypt";
+            this.btnEncrypt.Size = new System.Drawing.Size(200, 39);
+            this.btnEncrypt.TabIndex = 0;
+            this.btnEncrypt.Text = "Encrypt";
+            this.btnEncrypt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEncrypt.UseVisualStyleBackColor = true;
+            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(47, 149);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 17);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Username:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(48, 207);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 17);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Password:";
+            // 
+            // txtUser
+            // 
+            this.txtUser.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(60, 166);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(224, 25);
+            this.txtUser.TabIndex = 3;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(60, 224);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(224, 25);
+            this.txtPass.TabIndex = 4;
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.Blue;
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInicio.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnInicio.Location = new System.Drawing.Point(60, 284);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(224, 39);
+            this.btnInicio.TabIndex = 5;
+            this.btnInicio.Text = "Iniciar Sesión";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 459);
-            this.Controls.Add(this.pnlDecrypt1);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlEncrypt);
+            this.Controls.Add(this.pnlDecrypt1);
             this.Controls.Add(this.pnlPassword);
             this.Controls.Add(this.pnlTopSide);
             this.Controls.Add(this.pnlLeftSide);
@@ -462,9 +608,8 @@
             this.Text = "Form1";
             this.pnlLeftSide.ResumeLayout(false);
             this.pnlLeftSide.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMax)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMin)).EndInit();
+            this.pnlTopSide.ResumeLayout(false);
+            this.pnlDerecho.ResumeLayout(false);
             this.pnlEncrypt.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -474,6 +619,13 @@
             this.pnlPassword.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.pnlLogin.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,9 +640,6 @@
         private System.Windows.Forms.Button btnDecrypt;
         private System.Windows.Forms.Panel pnlDecrypt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox picMin;
-        private System.Windows.Forms.PictureBox picClose;
-        private System.Windows.Forms.PictureBox picMax;
         private System.Windows.Forms.Panel pnlEncrypt;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnEncryptAction;
@@ -515,6 +664,20 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnlDerecho;
+        private System.Windows.Forms.PictureBox picClose;
+        private System.Windows.Forms.PictureBox picMax;
+        private System.Windows.Forms.PictureBox picMin;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Panel pnlLogin;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }
 

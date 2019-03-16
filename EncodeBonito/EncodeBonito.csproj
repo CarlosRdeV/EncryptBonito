@@ -123,5 +123,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-save-32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encrypted-logo-template-preview-2-o.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

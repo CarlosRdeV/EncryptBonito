@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -83,13 +84,38 @@ namespace EncodeBonito
 
         private void btnEncryptAction_Click(object sender, EventArgs e)
         {
-            txtEncryptOutput.Text = Cifrador.Encrypt(txtEncryptInput.Text, txtPassword);
+            if (txtEncryptInput.Text=="")
+            {
+                MessageBox.Show("Inserta una cadena de texto, no puedes dejarlo en blanco");
+            }
+            else
+            {
+                txtEncryptOutput.Text = Cifrador.Encrypt(txtEncryptInput.Text, txtPassword);
+            }
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtDecryptOutput.Text = Cifrador.Decrypt(txtDecryptInput.Text, txtPassword);
+            try {
+                if (txtDecryptInput.Text == "")
+                {
+                    MessageBox.Show("Inserta una cadena encriptada, no puedes dejarlo en blanco");
+                }
+                else
+                {
+                    txtDecryptOutput.Text = Cifrador.Decrypt(txtDecryptInput.Text, txtPassword);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("La cadena no es valida");
+            }
+            catch (CryptographicException ex)
+            {
+                MessageBox.Show("ALERTA, la cadena ingresada ha sido modificada o insertó una contraseña invalida");
+            }
 
         }
 
@@ -117,7 +143,7 @@ namespace EncodeBonito
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text=="1" && txtPass.Text == "1")
+            if (txtUser.Text == "admin" && txtPass.Text == "admin")
             {
                 btnEncrypt.Enabled = true;
                 btnDecrypt.Enabled = true;
@@ -126,7 +152,28 @@ namespace EncodeBonito
                 btnLogin.Enabled = false;
                 pnlLogin.Visible = false;
                 pnlEncrypt.Visible = true;
+                txtUser.Text = "";
+                txtPass.Text = "";
 
+
+            }
+            else if(txtUser.Text=="user" & txtPass.Text=="user")
+            {
+                btnEncrypt.Enabled = true;
+                btnDecrypt.Enabled = true;
+                btnPassword.Enabled = false;
+                btnLogout.Enabled = true;
+                btnLogin.Enabled = false;
+                pnlLogin.Visible = false;
+                pnlEncrypt.Visible = true;
+                txtUser.Text = "";
+                txtPass.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Combinación Invalida");
+                txtUser.Text = "";
+                txtPass.Text = "";
             }
         }
 
@@ -138,6 +185,33 @@ namespace EncodeBonito
             btnLogout.Enabled = false;
             btnLogin.Enabled = true;
             pnlLogin.Visible = true;
+        }
+
+        private void btnSavePassword_Click(object sender, EventArgs e)
+        {
+            if(InputPassword.Text=="" & InputPasswordConfirm.Text=="")
+            {
+                MessageBox.Show("Inserte una contraseña y su confirmación");
+            }
+            else if(InputPassword.Text != InputPasswordConfirm.Text)
+            {
+                MessageBox.Show("Las contraseñas deben contener el mismo valor, intente de nuevo");
+            }
+            else if(InputPassword.Text == InputPasswordConfirm.Text)
+            {
+                txtPassword = InputPassword.Text;
+                MessageBox.Show("La contraseña ha sido guardada");
+            }
+        }
+
+        private void InputPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
